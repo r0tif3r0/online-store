@@ -12,7 +12,7 @@ const comment = document.querySelector('.comment');
 const getFullImgPath = (imgPath) => {
   const tmpArr = imgPath.split('/');
   const img = tmpArr.pop();
-  return `../img/${tmpArr.pop()}-orig/${img}`;
+  return `img/${tmpArr.pop()}-orig/${img}`;
 }
 
 const increaseAmount = () => {
