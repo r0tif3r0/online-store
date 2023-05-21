@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>DigStore</title>
+  <link rel="icon" href="img/favicon-32.ico" type="image/png">
+  <link rel="icon" href="img/favicon-16.ico" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/darkTheme.css">
+</head>
+<body class="body">
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <p class="company">DIGSTORE</p>
+        <ul class="nav links-container">
+            <li class="nav-link"><a href="#laptops-section" class="link">Ноутбуки</a></li>
+            <li class="nav-link"><a href="#phones-section" class="link">Телефоны</a></li>
+            <li class="nav-link"><a href="#tablets-section" class="link">Планшеты</a></li>
+            <li class="nav-link"><a href="#headphones-section" class="link">Наушники</a></li>
+            <li class="nav-link"><a href="#tvs-section" class="link">Телевизоры</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <button class="theme-button" type="button">Изменить тему</button>
+      </div>
+    </nav>
+    <div class="foreword">
+      <img class="foreword__img" src="img/foreword.png" alt="foreword">
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-container" id="laptops-section">
+      <div class="product-section laptops">
+        <h1 class="section-title">Ноутбуки</h1>
+        <div class="products-container"></div>
+      </div>
+    </section>
+
+    <section class="section-container" id="phones-section">
+      <div class="product-section phones">
+        <h1 class="section-title">Телефоны</h1>
+        <div class="products-container"></div>
+      </div>
+    </section>
+
+    <section class="section-container" id="tablets-section">
+      <div class="product-section tablets">
+        <h1 class="section-title">Планшеты</h1>
+        <div class="products-container"></div>
+      </div>
+    </section>
+
+    <section class="section-container" id="headphones-section">
+      <div class="product-section headphones">
+        <h1 class="section-title">Наушники</h1>
+        <div class="products-container"></div>
+      </div>
+    </section>
+
+    <section class="section-container" id="tvs-section">
+      <div class="product-section tvs">
+        <h1 class="section-title">Телевизоры</h1>
+        <div class="products-container"></div>
+      </div>
+    </section>
+
+    <div class="modal hidden">
+    <form class="form">
+      <div class="form__content">
+        <div class="img-container">
+          <img class="form__img" src="">
+          <label class="form__label title"></label>
+        </div>
+        <div class="amount-container">
+          <label class="form__label" for="amount">Количество</label>
+          <div class="amount-input">
+            <button class="minus-btn" type="button">-</button>
+            <input type="number" class="amount" id="amount" name="amount" value="1" min="1" required>
+            <button class="plus-btn" type="button">+</button>
+          </div>
+        </div>
+        <div class="color-container">
+           <label class="form__label">Цвет</label>
+          <div class="color-picker">
+            <div class="color-option">
+              <input type="radio" id="color1" name="color" value="#c5c5c5" checked>
+              <label for="color1" style="background-color: #c5c5c5;"></label>
+            </div>
+            <div class="color-option">
+              <input type="radio" id="color2" name="color" value="#000000">
+              <label for="color2" style="background-color: #000000;"></label>
+            </div>
+            <div class="color-option">
+              <input type="radio" id="color3" name="color" value="#000070">
+              <label for="color3" style="background-color: #000070;"></label>
+            </div>
+          </div>
+        </div>
+        <div class="comment-container">
+          <textarea class="comment" id="comment" name="comment" placeholder="Оставьте свой комментарий" maxlength="2000"></textarea>
+        </div>
+      </div>
+      <div class="form__buttons">
+        <button class="form__button close" type="button">Закрыть</button>
+        <button class="form__button buy" type="submit">Купить</button>
+      </div>
+    </form>
+    </div>
+
+    <div class="btn-up btn-up__hide"></div>
+  </main>
+  <footer class="footer">
+    <p class="company">DIGSTORE</p>
+    <ul class="links-container">
+      <li class="footer-link"><a href="#laptops-section" class="link">Ноутбуки</a></li>
+      <li class="footer-link"><a href="#phones-section" class="link">Телефоны</a></li>
+      <li class="footer-link"><a href="#tablets-section" class="link">Планшеты</a></li>
+      <li class="footer-link"><a href="#headphones-section" class="link">Наушники</a></li>
+      <li class="footer-link"><a href="#tvs-section" class="link">Телевизоры</a></li>
+    </ul>
+    <p class="terms">Условия сервиса</p>
+    <div class="socials"></div>
+  </footer>
+
+  <script src="js/index.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+.body.dark-theme {
+  background: #303030;
+  color: #ffffff;
+}
+
+.dark-theme .navbar {
+  background: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+.dark-theme .navbar-container {
+  background: #000000;
+}
+
+.dark-theme .bar {
+  background-color: #ffffff;
+}
+
+.dark-theme .nav.links-container {
+  background-color: #000000;
+  box-shadow: 0 0 10px #000000;
+}
+
+.dark-theme .link {
+  color: #ffffff;
+}
+
+.dark-theme .link.active::before {
+  background: #ffffff;
+}
+
+.dark-theme .theme-button::before {
+  background-image: url(../img/theme-icons/night-theme-icon.png);
+}
+
+.dark-theme .section-title {
+  background-color: #303030;
+}
+
+.dark-theme .footer {
+  background-color: #000000;
+}
+
+.dark-theme .socials {
+  filter: invert(1)
+}
+
+.dark-theme .btn-up::before {
+  filter: invert(1)
+}
+
+.dark-theme .form {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  background-color: #555555;
+}
+
+.dark-theme .amount-input input {
+  border: 1px solid #000000;
+  background-color: #8f8f8f;
+  color: #ffffff;
+}
+
+.dark-theme .comment {
+  border: 1px solid #000000;
+  background-color: #8f8f8f;
+  color: #ffffff;
+}
+
+.dark-theme .comment::placeholder {
+  color: #dbdbdb;
+}
