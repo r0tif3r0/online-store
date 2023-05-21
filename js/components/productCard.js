@@ -28,7 +28,7 @@ productCardTmp.appendChild(productInfo);
 
 const style = document.createElement('link');
 style.setAttribute('rel', 'stylesheet');
-style.setAttribute('href', '../css/productCard.css');
+style.setAttribute('href', './css/productCard.css');
 
 const reflect = (params, obj) => {
   params.forEach(param => {
