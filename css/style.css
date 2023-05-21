@@ -513,7 +513,7 @@ html{
 
 @media screen and (max-width: 1200px) {
   .navbar-container {
-    width: 730px;
+    width: 90%;
   }
   .hamburger {
     display: block;
@@ -546,12 +546,21 @@ html{
     margin: 16px 0;
   }
   .main{
-    width: 730px;
+    width: 90%;
   }
   .foreword__img {
-    width: 730px;
+    width: 90%;
   }
+}
+
+@media screen and (max-width: 950px) {
   .products-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .products-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
