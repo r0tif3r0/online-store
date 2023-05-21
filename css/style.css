@@ -484,6 +484,9 @@ html{
   .products-container {
     grid-template-columns: repeat(3, 1fr);
   }
+  .form__img {
+    height: 300px;
+  }
 }
 
 .hamburger {
