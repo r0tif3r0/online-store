@@ -66,6 +66,9 @@ class ProductCard extends HTMLElement {
     themeButton.addEventListener('click', () => {
       shadow.querySelector('.product-card').classList.toggle('dark-theme');
     });
+    if (localStorage.getItem('dark-theme') === 'true') {
+      shadow.querySelector('.product-card').classList.toggle('dark-theme');
+    }
 
     reflect(params, this);
   }

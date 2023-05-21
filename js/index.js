@@ -9,7 +9,12 @@ const themeButton = document.querySelector('.theme-button');
 
 themeButton.addEventListener('click', () => {
   document.body.classList.toggle('dark-theme');
+  localStorage.setItem('dark-theme', document.body.classList.contains('dark-theme'));
 });
+
+if (localStorage.getItem('dark-theme') === 'true') {
+  document.body.classList.toggle('dark-theme');
+}
 
 renderGrid();
 activateNavLinks();

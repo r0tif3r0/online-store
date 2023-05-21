@@ -41,6 +41,14 @@
   background-color: #000000;
 }
 
+.dark-theme .preloader {
+  background: #303030;
+}
+
+.dark-theme .preloader__item {
+  background-color: #ffffff;
+}
+
 .dark-theme .socials {
   filter: invert(1)
 }
