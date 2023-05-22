@@ -20,6 +20,6 @@ renderGrid();
 activateNavLinks();
 activateHamburger();
 btnUp.addEventListener();
-window.onload = function () {
+window.onload = () => {
   document.body.classList.add('loaded');
 }
