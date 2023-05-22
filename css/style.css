@@ -323,7 +323,7 @@ html{
 .amount-container {
   grid-column: 3;
   grid-row: 1;
-  margin: 50px auto;
+  margin-top: 50px;
   padding: 20px;
 }
 
@@ -560,10 +560,19 @@ html{
   .products-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .form {
+    width: 600px;
+  }
 }
 
 @media screen and (max-width: 650px) {
   .products-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .form {
+    width: 400px;
+  }
+  .amount-container{
+    padding: 0;
   }
 }

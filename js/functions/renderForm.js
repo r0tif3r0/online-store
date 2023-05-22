@@ -45,6 +45,7 @@ const submitPurchase = (evt) => {
 const openModal = () => {
   modal.classList.remove('hidden');
   document.body.style.overflow = 'hidden';
+  modal.style.overflow = 'auto';
 }
 
 const closeModal = () => {
