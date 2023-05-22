@@ -62,7 +62,7 @@ const closeModal = () => {
 }
 
 const closeModalByWindow = (evt) => {
-  if (evt.target == modal) {
+  if (evt.target === modal) {
     closeModal();
   }
 }
